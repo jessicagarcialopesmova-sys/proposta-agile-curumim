@@ -351,8 +351,8 @@ footer strong{color:var(--ink);font-weight:600}
           <p class="note">Contrato mínimo de 3 meses. A verba dos anúncios da Curumim é paga diretamente ao Meta.</p>
         </div>
         <div class="pp" id="pp-mes" hidden>
-          <div class="biz-line"><div><b>Curumim Negócios Imobiliários</b><small>Com tráfego pago</small></div><span>R$ 3.200/mês</span></div>
-          <div class="biz-line"><div><b>Agile Construtora</b><small>Sem tráfego pago</small></div><span>R$ 2.200/mês</span></div>
+          <div class="biz-line"><div><b>Curumim Negócios Imobiliários</b><small>Com tráfego pago</small></div><span>R$ 2.500/mês</span></div>
+          <div class="biz-line"><div><b>Agile Construtora</b><small>Sem tráfego pago</small></div><span>R$ 2.500/mês</span></div>
           <p class="note">Sem contrato mínimo. Cada negócio pode ser contratado sozinho.</p>
         </div>
       </div>
@@ -360,12 +360,12 @@ footer strong{color:var(--ink);font-weight:600}
         <p class="label" id="r-l">Contrato de 3 meses · os dois negócios</p>
         <p class="big"><span id="r-v">R$ 2.500</span> <small>/mês</small></p>
         <p class="was" id="r-s">Total de R$ 7.500 nos 3 meses</p>
-        <span class="badge" id="r-b">Economia de R$ 2.900 por mês</span>
+        <span class="badge" id="r-b">Economia de R$ 2.500 por mês</span>
         <div class="bars" aria-hidden="true">
           <div class="bar2"><span>Mês a mês, os dois negócios</span><div class="track"><div class="fill" style="width:100%"></div></div></div>
-          <div class="bar2 pack"><span>Contrato de 3 meses, os dois negócios</span><div class="track"><div class="fill" style="width:46.3%"></div></div></div>
+          <div class="bar2 pack"><span>Contrato de 3 meses, os dois negócios</span><div class="track"><div class="fill" style="width:50%"></div></div></div>
         </div>
-        <p class="hint" id="r-h">Mês a mês, os dois negócios somariam R$ 5.400 por mês.</p>
+        <p class="hint" id="r-h">Mês a mês, os dois negócios somariam R$ 5.000 por mês.</p>
       </div>
     </div>
   </div>
@@ -407,10 +407,10 @@ footer strong{color:var(--ink);font-weight:600}
     pb.forEach(function(x){x.setAttribute('aria-pressed',x===b);});
     document.getElementById('pp-tri').hidden=!t;document.getElementById('pp-mes').hidden=t;
     document.getElementById('r-l').textContent=t?'Contrato de 3 meses · os dois negócios':'Mês a mês · os dois negócios';
-    document.getElementById('r-v').textContent=t?'R$ 2.500':'R$ 5.400';
-    document.getElementById('r-s').textContent=t?'Total de R$ 7.500 nos 3 meses':'R$ 3.200 da Curumim + R$ 2.200 da Agile';
+    document.getElementById('r-v').textContent=t?'R$ 2.500':'R$ 5.000';
+    document.getElementById('r-s').textContent=t?'Total de R$ 7.500 nos 3 meses':'R$ 2.500 da Curumim + R$ 2.500 da Agile';
     document.getElementById('r-b').classList.toggle('off',!t);
-    document.getElementById('r-h').textContent=t?'Mês a mês, os dois negócios somariam R$ 5.400 por mês.':'No contrato de 3 meses, os dois negócios saem por R$ 2.500 por mês.';
+    document.getElementById('r-h').textContent=t?'Mês a mês, os dois negócios somariam R$ 5.000 por mês.':'No contrato de 3 meses, os dois negócios saem por R$ 2.500 por mês.';
   });});
   document.querySelectorAll('.biz').forEach(function(root){
     var tabs=[].slice.call(root.querySelectorAll('.tab'));
